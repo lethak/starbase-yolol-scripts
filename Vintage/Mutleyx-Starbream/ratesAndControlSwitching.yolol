@@ -1,0 +1,5 @@
+// Rates and control switching -Mutleyx
+r=2*(100-:Battery/100) r1=0 r2=0 
+if :Gen1!=0 then r1=r end  if :Gen2!=0 then r2=r end
+:TFR1=r2 :TFR2=r2-20 :TFR3=r2-40 :BFR1=r1 :BFR2=r1-20 :BFR3=r1-40
+:Range_f=1-:Range goto 2

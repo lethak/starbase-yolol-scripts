@@ -1,0 +1,5 @@
+// Monitoring and warnings  -Mutleyx
+:WarnBeacon = :insideSafeZone==0
+:WarnApproach = :Approach and :RangeMid<500  
+:WarnGas= :GasNetwork < 2400000
+:WarnFuel= (:Fuel1+:Fuel2) < 60000 goto 2

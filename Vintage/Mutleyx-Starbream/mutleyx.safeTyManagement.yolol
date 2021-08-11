@@ -1,0 +1,4 @@
+// Safety management - Mutleyx
+If :mine == 1 then :FcuForward=0 end
+:laser1=:mine and (:Battery>1000) :laser2=:mine and (:Battery>3000)
+if :Cruise==0 and :FcuForward>50 then :Doors=0 :Collect=0 end goto2
