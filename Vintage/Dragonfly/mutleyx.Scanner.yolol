@@ -1,0 +1,6 @@
+// Scanner script - Mutleyx
+goto3+:ScanOn
+:Info="\nNo Results" goto2
+mr=:ScanResults r=0 :rescan=1-:rescan if mr==0 then goto3 end
+:index=r r++ :Info=r+"/"+mr+"\n\n"+:Material+"\n"+:Volume t=4 
+if t-->0 then goto6 end if r==mr then goto2 end goto5

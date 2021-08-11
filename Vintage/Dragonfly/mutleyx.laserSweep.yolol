@@ -1,0 +1,13 @@
+// Laser sweep script (1d or 2d) - Mutleyx
+br=3 dp=2 dr=1 p=0 r=0 t=0 
+if :Laser and :Sweep then goto 10 end
+:LaserRotR=br :LaserRotL=-br :LaserPitch=0 :InvLaserPitch=0 p=0 
+if :SweepSpeed<0.01 then :SweepWidth=10 :SweepSpeed=0.15 end goto3
+
+
+
+
+t+=22  if t<:SweepWidth/:SweepSpeed then goto 3 end
+mr=:SweepWidth mp=mr r=dr*mr dr=-dr p+=dp if p>2*mp then p=0 end
+:LaserRotR= br+r :LaserRotL=-br+r t=0 pp=p*:Sweep2D
+:LaserPitch=pp :InvLaserPitch=-pp goto 3

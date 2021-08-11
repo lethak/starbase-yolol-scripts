@@ -1,0 +1,7 @@
+// General ship script - Mutleyx
+h=100 c=0
+fl=(:collect*70)+(h-(:Battery/h))*2 :FuelLimit1=fl :FuelLimit2=fl-50
+if :cruise==0 and :FcuForward>50 then :Door=0 end 
+if :battery>=9990 then c++ else c=0 end if c>300 then :collect=0 end
+:laser=:Mine and :Battery>1000 
+goto 3
