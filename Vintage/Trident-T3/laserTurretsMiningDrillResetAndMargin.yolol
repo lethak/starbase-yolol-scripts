@@ -1,0 +1,3 @@
+//Mining drill reset(2) and Min/Max margin calculation(3)\\
+if :Drill==0 then :T=0 :TS=3 end
+:AMI=:Adjust-:MM :AMA=:Adjust+:MM goto2

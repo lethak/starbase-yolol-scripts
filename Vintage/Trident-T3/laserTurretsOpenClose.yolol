@@ -1,0 +1,3 @@
+//Laser turrets open(2)/close(3) function\\
+if :Drill==1 AND :C<:AMA then :T+=:TV+2 goto2 else end goto3
+if :Drill==1 AND :C>:AMI then :T-=:TV+2 goto3 else end goto2

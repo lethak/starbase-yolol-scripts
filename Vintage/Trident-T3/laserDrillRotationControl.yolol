@@ -1,0 +1,2 @@
+//Laser drill rotation control\\
+if :Drill==1 then :TB=:TCRB+:Drill*100 else :TB=0 end goto2
