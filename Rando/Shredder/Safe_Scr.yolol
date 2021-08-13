@@ -1,0 +1,25 @@
+S="\nZone:" if :Safezone then S+="Yes" else S+="No" end
+S+="\nShip:" if NOT :ShipDamage then S+="Yes" else S+="No" end
+S+="\nPlay:" if NOT :PlayDamage then S+="Yes" else S+="No" end
+S+="\nColl:" if NOT :CollDamage then S+="Yes" else S+="No" end
+S+="\nStat:" if :StationAllowed then S+="Yes" else S+="No" end
+:Safe=S goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

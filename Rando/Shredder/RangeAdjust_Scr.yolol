@@ -1,0 +1,20 @@
+x/=:Aim :RA=:RangeAdjust if :RF<30 then :RFC=:RF end goto 1
+:RangeAdjust=0 :RA=0 :RFC=30 goto 1
+goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

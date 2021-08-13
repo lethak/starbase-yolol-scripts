@@ -1,0 +1,20 @@
+LL=15.82 LR=8.08 
+:DTP=0 :LTP=0 :LTR=0 :CTR=0 :TurretPitch=:LTPC goto :MiningMode+2
+F=:RFC+:RA L=ATAN((LL-F)/LR)+90 :DTP=90
+if L>140 then L=140 end :LTP=L :TurretPitch=:LTPC goto :MiningMode+2
+goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+// Based on Dragonfly-Script made by Mutleyx
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

@@ -1,0 +1,19 @@
+if :Slow<100 then :SMM=1+(:Turtle==0) goto1 else :SMM=0 :Turtle=1 end
+goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

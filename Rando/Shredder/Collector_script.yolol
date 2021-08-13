@@ -1,0 +1,20 @@
+LL=12.94 LR=8.08 :LTR=0 :CTR=0 :CTP=0 goto :MiningMode+1
+F=:RFC+:RA L=ATAN((LL-F)/LR)+90 
+if L>140 then L=140 end :CTP=L goto :MiningMode+1
+goto 1
+
+// LL = Distance between Laser Turret and Range Finder in Z Axis.
+// LR = Distance between Laser Turret and Range Finder in X/Y Axis.
+
+
+
+
+
+
+
+
+
+
+// Based on Dragonfly-Script made by Mutleyx
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

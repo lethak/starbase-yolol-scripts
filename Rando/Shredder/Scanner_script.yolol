@@ -1,0 +1,20 @@
+LL=4.83 LR=4.70 :STR=0 :STP=30 goto :Aim+1q
+x/=:Scanner F=:RFC+:RA :STP=ATAN((LL-F)/LR)+120 goto :Aim+1
+:STP=30 goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Based on Dragonfly-Script made by Mutleyx
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

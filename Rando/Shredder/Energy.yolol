@@ -1,0 +1,19 @@
+:Battery=:Battery1+:Battery2+:Battery3+:Battery4
+F=(40000-:Battery)/100 :FuelChamberUnitRateLimit=F-F%1 goto 1
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+

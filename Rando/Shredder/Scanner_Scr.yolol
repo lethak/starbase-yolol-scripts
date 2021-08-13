@@ -1,0 +1,20 @@
+LF="\n" F="Failed..."+LF B="Scanning..."+LF X="Material:" +LF
+A="Amount:"+LF R="Ready" DL=20*5 goto 14 // DL=20 Seconds Display Time
+goto :Scanner+3
+:SA=1 :Index=0 :Scan=LF+B :Scanner_Scr=5 
+if (:ScanResults!=2) then goto 10 end
+m=:Material-" Ore"-" Crystal"-" Erz"-" Kristall" :MA1=m :VO1=:Volume
+:Index=1 :Scan=LF+B :Scanner_Scr=2
+m=:Material-" Ore"-" Crystal"-" Erz"-" Kristall" :MA2=m :VO2=:Volume
+:Scan=LF+:MA1+LF+:VO1+LF+:MA2+LF+:VO2 :Scanner=0 :SA=0 goto 12
+:Scan=LF+F :Scanner=0 :SA=0 goto 12
+goto 3
+:ScanDisp=DL
+:ScanDisp-- if(:ScanDisp>0) then goto 13+:Scanner end
+:Scan=LF+R goto 3
+
+// Rename Chipwait of the script to Scanner_Scr
+// Fields on Memorychip : MA1, :MA2, :VO1, :VO2, :Scan, :ScanDisp
+// Made by Nightshade#0153
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

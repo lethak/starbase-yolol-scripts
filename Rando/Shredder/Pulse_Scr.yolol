@@ -1,0 +1,20 @@
+if :MiningMode then goto :pulse else :Collector=0 goto 1 end
+:ml1=:ml :ml2=:ml goto 1
+:ml1=:ml :ml2=0 if NOT :ml then goto 1 end
+
+:ml1=0 :ml2=:ml if NOT :ml then goto 1 end
+
+goto 3
+
+// Pulse is a button State0=2 State1=3
+// ML is the "Laser Fire" Button
+
+
+
+
+
+
+
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT

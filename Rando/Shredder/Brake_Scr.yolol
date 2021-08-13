@@ -1,0 +1,19 @@
+if (:FcuBackward>0) and (:FCUForward>0) then goto 2 end goto 1
+:Cruise=4 goto 1
+goto 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (c) Nightshade 2021 (Licensed under "MIT-License")
+// https://opensource.org/licenses/MIT
